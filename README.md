@@ -7,7 +7,7 @@
 
 Visualizador interativo de algoritmos de busca de caminho (pathfinding) com animações em tempo real e interface intuitiva.
 
-![Pathfinding Demo](https://via.placeholder.com/800x400?text=Pathfinding+Visualizer+Demo)
+![Pathfinding Demo](https://pathfinding-visualizer-ac.vercel.app/)
 
 ## ✨ Funcionalidades
 
@@ -22,7 +22,7 @@ Visualizador interativo de algoritmos de busca de caminho (pathfinding) com anim
 
 ## 🚀 Demo
 
-[Ver Demo ao Vivo]()
+[Ver Demo ao Vivo](https://pathfinding-visualizer-ac.vercel.app/)
 
 ## 🎮 Como Usar
 
