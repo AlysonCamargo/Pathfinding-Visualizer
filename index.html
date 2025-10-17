@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🗺️ Pathfinding Visualizer</h1>
+            <p class="subtitle">Visualize algoritmos de busca de caminho em tempo real</p>
+        </header>
+
+        <div class="controls-panel">
+            <div class="control-section">
+                <label for="algorithm-select">Algoritmo:</label>
+                <select id="algorithm-select">
+                    <option value="dijkstra">Dijkstra</option>
+                    <option value="astar">A* Search</option>
+                    <option value="bfs">Breadth-First Search</option>
+                    <option value="dfs">Depth-First Search</option>
+                    <option value="greedy">Greedy Best-First</option>
+                </select>
+            </div>
+
+            <div class="control-section">
+                <label for="speed">Velocidade: <span id="speed-value">20</span>ms</label>
+                <input type="range" id="speed" min="1" max="100" value="20">
+            </div>
+
+            <div class="control-section">
+                <label for="grid-size">Tamanho da Grade:</label>
+                <select id="grid-size">
+                    <option value="small">Pequena (20x10)</option>
+                    <option value="medium" selected>Média (40x20)</option>
+                    <option value="large">Grande (60x30)</option>
+                </select>
+            </div>
+
+            <div class="button-container">
+                <button id="visualize-btn" class="btn btn-primary">▶️ Visualizar</button>
+                <button id="clear-path-btn" class="btn btn-secondary">🔄 Limpar Caminho</button>
+                <button id="clear-all-btn" class="btn btn-danger">🗑️ Limpar Tudo</button>
+                <button id="generate-maze-btn" class="btn btn-info">🧱 Gerar Labirinto</button>
+            </div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-box start-node"></div>
+                <span>Início</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box end-node"></div>
+                <span>Fim</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box wall-node"></div>
+                <span>Parede</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box visited-node"></div>
+                <span>Visitado</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-box path-node"></div>
+                <span>Caminho</span>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <span class="stat-label">Nós Visitados</span>
+                <span id="visited-count" class="stat-value">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Comprimento do Caminho</span>
+                <span id="path-length" class="stat-value">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Tempo de Execução</span>
+                <span id="execution-time" class="stat-value">0ms</span>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <p>💡 <strong>Instruções:</strong> Clique e arraste para criar paredes. Arraste os nós verde (início) e vermelho (fim) para reposicioná-los.</p>
+        </div>
+
+        <div id="grid-container"></div>
+
+        <div class="algorithm-info">
+            <h3>📚 Sobre o Algoritmo Selecionado</h3>
+            <div id="algo-details">
+                <p><strong>Complexidade:</strong> <span id="complexity"></span></p>
+                <p><strong>Garantia:</strong> <span id="guarantee"></span></p>
+                <p><strong>Descrição:</strong> <span id="algo-description"></span></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Criado com 💙 para demonstração de algoritmos | <a href="https://github.com/seu-usuario" target="_blank">Ver no GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
