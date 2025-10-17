@@ -87,26 +87,6 @@ Este projeto demonstra conhecimento em:
 - ✅ Animações CSS avançadas
 - ✅ Código limpo e organizado
 
-## 📂 Estrutura do Projeto
-pathfinding-visualizer/
-│
-├── index.html # Estrutura HTML
-├── styles.css # Estilos e animações
-├── script.js # Lógica dos algoritmos
-└── README.md # Documentação
-
-
-## 🎨 Capturas de Tela
-
-### Algoritmo A* em Ação
-![A* Algorithm](https://via.placeholder.com/600x300?text=A*+Algorithm)
-
-### Labirinto Gerado
-![Maze Generation](https://via.placeholder.com/600x300?text=Maze+Generation)
-
-### Comparação BFS vs DFS
-![BFS vs DFS](https://via.placeholder.com/600x300?text=BFS+vs+DFS)
-
 ## 🌟 Características Técnicas
 
 - **Performance Otimizada**: Animações suaves mesmo com grades grandes
