@@ -7,8 +7,6 @@
 
 Visualizador interativo de algoritmos de busca de caminho (pathfinding) com animações em tempo real e interface intuitiva.
 
-![Pathfinding Demo](https://pathfinding-visualizer-ac.vercel.app/)
-
 ## ✨ Funcionalidades
 
 - 🧭 **5 Algoritmos Clássicos**: Dijkstra, A*, BFS, DFS e Greedy Best-First Search
